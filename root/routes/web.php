@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\SurveyController;
+use App\Models\Survey;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +18,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::prefix('/survey')->group(function(){
+    Route::get('/home',[SurveyController::class,'home']);
+    Route::get('/answer',[SurveyController::class,'answer']);
+    Route::post('/store',[SurveyController::class,'store']);
+    Route::get('/thanks',[SurveyController::class,'thanks']);
+});
+
