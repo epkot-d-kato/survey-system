@@ -28,11 +28,20 @@
                 <input type="radio" name="budget" value="10万">10万
                 <input type="radio" name="budget" value="100万">100万
                 <input type="radio" name="budget" value="1000万">1000万
+            </div>
 
+            <div id="back_question">
+                <button>戻る</button>
+            </div>
+
+            <div id="next_question">
+                <button>進む</button>
+            </div>
+
+            <div id="finish">
                 <p>これで質問は終わりです。</p>
-                <p>回答が完了したら送信ボタンをクリックしてください</p>
+                <p>送信ボタンをクリックしてください。</p>
                 <p><button type="submit">送信</button></p>
-
             </div>
 
         </form>
