@@ -26,3 +26,6 @@ Route::prefix('/survey')->group(function(){
     Route::get('/thanks',[SurveyController::class,'thanks']);
 });
 
+Route::prefix('/admin')->group(function(){
+    Route::get('/index',[SurveyController::class,'index']);
+});
