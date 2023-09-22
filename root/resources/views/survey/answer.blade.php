@@ -16,35 +16,45 @@
         <form method="POST" action="/survey/store">
             @csrf
 
-            <div id="question_place">
+            <div class="question" data-id="1">
                 <p>1.旅行に行くならどこに行きたいですか?</p>
                 <input type="radio" name="place" value="東京">東京
                 <input type="radio" name="place" value="名古屋">名古屋
                 <input type="radio" name="place" value="大阪">大阪
             </div>
 
-            <div id="question_budget">
+            <div class="question" data-id="2" style="display:none;">
                 <p>2.予算はどれくらいですか?</p>
                 <input type="radio" name="budget" value="10万">10万
                 <input type="radio" name="budget" value="100万">100万
                 <input type="radio" name="budget" value="1000万">1000万
             </div>
 
-            <div id="back_question">
-                <button>戻る</button>
+            <div class="question" data-id="3" style="display:none;">
+                <p>3.誰と一緒にいきたいですか？</p>
+                <input type="radio" name="accompany" value="家族">家族
+                <input type="radio" name="accompany" value="友人">友人
+                <input type="radio" name="accompany" value="一人">一人
             </div>
 
-            <div id="next_question">
-                <button>進む</button>
-            </div>
-
-            <div id="finish">
+            <div class="question" data-id="4" style="display:none;">
                 <p>これで質問は終わりです。</p>
                 <p>送信ボタンをクリックしてください。</p>
                 <p><button type="submit">送信</button></p>
             </div>
-
         </form>
+
+        <div id="back_question">
+            <button>戻る</button>
+        </div>
+
+        <div id="next_question">
+            <button>進む</button>
+        </div>
+
+
+
+
 
         <button onclick="location.href='/survey/home'">中止</button>
 

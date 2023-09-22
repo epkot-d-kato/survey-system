@@ -53,6 +53,7 @@ class SurveyController extends Controller
         Survey::create([
             'place' => $validatedData['place'],
             'budget' => $validatedData['budget'],
+            'accompany' => $validatedData['accompany'],
         ]);
 
         return redirect('/survey/thanks');

@@ -1,25 +1,31 @@
 $(document).ready(function(){
+    let currentQuestion=1;
 
-    $('input[name="place"]').change(function(){
-        $('#next_question').click(function(){
-            $('#question_place').fadeOut(function(){
-                $('#question_budget').fadeIn();
-            });
-        });
-    });
+    $('#next_question').click(function(){
+        const currentDiv = $('.question[data-id="'+ currentQuestion + '"]');
+        const nextDiv = $('.question[data-id="' + (currentQuestion + 1) + '"]');
 
-    $('input[name="budget"]').change(function(){
-        $('#next_question').click(function(){
-            $('#question_budget, #next_question').fadeOut(function(){
-                $('#finish').fadeIn();
+        if (currentDiv.length > 0 && nextDiv.length > 0) {
+            currentDiv.fadeOut(function(){
+                nextDiv.fadeIn();
             });
-        });
+            currentQuestion++;
+        }
+
     });
 
     $('#back_question').click(function(){
-        $('#question_budget').fadeOut(function(){
-            $('#question_place').fadeIn();
-        });
+        const currentDiv = $('.question[data-id="'+ currentQuestion + '"]');
+        const prevDiv = $('.question[data-id="' + (currentQuestion - 1) + '"]');
+
+        if (currentDiv.length > 0 && prevDiv.length > 0) {
+            currentDiv.fadeOut(function(){
+                prevDiv.fadeIn();
+            });
+            currentQuestion--;
+        }
+
     });
 
 });
+

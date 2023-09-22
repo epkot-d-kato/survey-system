@@ -12,5 +12,6 @@ class Survey extends Model
     protected $fillable =[
         'place',
         'budget',
+        'accompany',
     ];
 }

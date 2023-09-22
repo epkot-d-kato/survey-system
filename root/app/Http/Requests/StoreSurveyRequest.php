@@ -26,6 +26,7 @@ class StoreSurveyRequest extends FormRequest
         return [
             'place' => 'required',
             'budget' => 'required',
+            'accompany' => 'required',
         ];
     }
 }
