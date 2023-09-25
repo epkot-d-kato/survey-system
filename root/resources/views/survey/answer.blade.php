@@ -11,7 +11,22 @@
 </head>
 
 <body>
-    <section id=main>
+    <section id="header">
+        @include('/survey/common')
+    </section>
+
+
+    <section class="step_bar">
+        <ul>
+            <li class="circle" data-id="1">1</li>
+            <li class="bar">&emsp;</li>
+            <li class="circle" data-id="2">2</li>
+            <li class="bar">&emsp;</li>
+            <li class="circle" data-id="3">3</li>
+        </ul>
+    </section>
+
+    <section id="main">
 
         <form method="POST" action="/survey/store">
             @csrf
@@ -44,6 +59,10 @@
             </div>
         </form>
 
+    </section>
+
+    <section class="controller_button">
+
         <div id="back_question">
             <button>戻る</button>
         </div>
@@ -52,13 +71,15 @@
             <button>進む</button>
         </div>
 
+        <div id="cancel_question">
+            <button onclick="location.href='/survey/home'">中止</button>
+        </div>
 
-
-
-
-        <button onclick="location.href='/survey/home'">中止</button>
 
     </section>
+
+
+
 
 </body>
 

@@ -1,0 +1,12 @@
+.main {
+    font-size: 1.2em;
+}
+
+button {
+    background-color:skyblue;
+    border-color:skyblue;
+    padding: 2% 5%;
+    color:white;
+    font-size: 1.4em;
+
+}

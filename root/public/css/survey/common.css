@@ -1,0 +1,11 @@
+body {
+    background-image: url("/img/survey/embossed-diamond.png");
+}
+
+.common {
+    background-color: skyblue;
+    color: white;
+    font-size: 2em;
+
+}
+

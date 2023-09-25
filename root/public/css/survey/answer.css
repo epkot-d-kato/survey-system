@@ -1,0 +1,51 @@
+.step_bar {
+    border: solid;
+}
+
+.step_bar ul{
+    list-style: none;
+    letter-spacing:-0.6em;
+    text-align:center;
+}
+
+.step_bar li{
+    display: inline-block;
+    font-size:1.2em;
+    text-align: center;
+    letter-spacing:0.1em;
+
+}
+
+.circle {
+    border:solid lightgray;
+    border-radius:50%;
+    width:5em;
+    line-height:5em;
+    /* background-color:lightgray; */
+
+}
+
+.bar {
+    border:solid  lightgray;
+    background-color:lightgray;
+    padding:0%;
+    width:5em;
+}
+
+
+#main {
+    border:solid;
+    padding:10%;
+}
+
+.question {
+    font-size: 1.4em;
+    text-align: center;
+}
+.controller_button {
+    text-align: center;
+}
+
+#back_question, #next_question, #cancel_question {
+    display: inline-block;
+}
