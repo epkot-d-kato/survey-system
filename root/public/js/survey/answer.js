@@ -13,6 +13,7 @@ $(document).ready(function () {
                 currentQuestion++;
                 updateStepColor(currentQuestion);
             });
+
         }
     });
 
@@ -26,13 +27,14 @@ $(document).ready(function () {
                 currentQuestion--;
                 updateStepColor(currentQuestion);
             });
+
         }
     });
 
     function updateStepColor(currentQuestion) {
 
         $('.circle[data-id]').css('background-color', '');
-        
+
         if (currentQuestion === 1) {
             $('.circle[data-id="1"]').fadeIn(function () {
                 $(this).css('background-color', 'skyblue');

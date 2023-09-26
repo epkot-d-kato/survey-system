@@ -1,11 +1,12 @@
 .step_bar {
-    border: solid;
+
 }
 
 .step_bar ul{
     list-style: none;
     letter-spacing:-0.6em;
     text-align:center;
+    padding:0;
 }
 
 .step_bar li{
@@ -19,9 +20,8 @@
 .circle {
     border:solid lightgray;
     border-radius:50%;
-    width:5em;
-    line-height:5em;
-    /* background-color:lightgray; */
+    width:2em;
+    line-height:2em;
 
 }
 
@@ -29,12 +29,22 @@
     border:solid  lightgray;
     background-color:lightgray;
     padding:0%;
-    width:5em;
+    width:8em;
+    line-height:0.2em;
+}
+
+.circle_under {
+
+}
+
+.bar_under {
+    padding:0%;
+    width:8.35em;
+    line-height:0.2em;
 }
 
 
 #main {
-    border:solid;
     padding:10%;
 }
 

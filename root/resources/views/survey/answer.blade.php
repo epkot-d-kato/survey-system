@@ -24,6 +24,14 @@
             <li class="bar">&emsp;</li>
             <li class="circle" data-id="3">3</li>
         </ul>
+        <ul>
+            <li class="circle_under" data-id="1">場所</li>
+            <li class="bar_under">&emsp;</li>
+            <li class="circle_under" data-id="2">予算</li>
+            <li class="bar_under">&emsp;</li>
+            <li class="circle_under" data-id="3">誰と</li>
+        </ul>
+
     </section>
 
     <section id="main">
